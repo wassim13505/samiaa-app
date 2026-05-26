@@ -23,9 +23,9 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
 
-    # هذا الأمر السحري يخبر الأندرويد بتجميع الكود وتخطي فحص مفاتيح التوقيع نهائياً
-    - name: Build with Gradle (Ignore Signing)
-      run: gradle assembleDebug -x validateSigningDebug --no-daemon
+    # الأمر السحري الجديد لتجميع الـ APK مباشرة وتخطي عقبة التوقيع نهائياً
+    - name: Package APK Directly
+      run: gradle :app:packageDebug --no-daemon
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
