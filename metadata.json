@@ -1,0 +1,8 @@
+{
+  "name": "Samiâ",
+  "description": "Expert Tunisian Arabic (Derja) speech-to-text platform specifically optimized for the Deaf and Hard of Hearing (DHH) community, power-assisted by Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
